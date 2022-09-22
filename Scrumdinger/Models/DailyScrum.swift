@@ -48,7 +48,7 @@ extension DailyScrum {
     }
 }
 
-// sample data
+// sample data to prototype
 extension DailyScrum {
     static let sampleData: [DailyScrum] = [
         DailyScrum(title: "Design",
