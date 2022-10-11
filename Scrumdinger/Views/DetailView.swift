@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct DetailView: View {
-    let scrum: DailyScrum // single
+    let scrum: DailyScrum
+    @State private var data = DailyScrum.Data()
     @State private var isPresentingEditView = false
     var body: some View {
         List {
@@ -21,7 +22,7 @@ struct DetailView: View {
                 HStack {
                     Label("Length", systemImage: "clock")
                     Spacer()
-                    Text("\(scrum.lengthInMinutes) minutes")
+                    Text("\(data.lengthInMinutes) minutes")
                 }
                 /*
                  Add accessibilityElement(children:) to the HStack to combine the Label and Text elements for accessibility users.
@@ -31,29 +32,30 @@ struct DetailView: View {
                 HStack {
                     Label("Theme", systemImage: "paintpalette")
                     Spacer()
-                    Text(scrum.theme.name)
+                    Text(data.theme.name)
                         .padding(4)
-                        .foregroundColor(scrum.theme.accentColor)
-                        .background(scrum.theme.mainColor)
+                        .foregroundColor(data.theme.accentColor)
+                        .background(data.theme.mainColor)
                         .cornerRadius(4)
                 }
                 .accessibilityElement(children: .combine)
                 Section(header: Text("Attendees")) {
-                    ForEach(scrum.attendees) { attendee in
+                    ForEach(data.attendees) { attendee in
                         Label(attendee.name, systemImage: "person")                    }
                 }
             }
         }
-        .navigationTitle(scrum.title)
+        .navigationTitle(data.title)
         .toolbar {
             Button("Edit") {
                 isPresentingEditView = true
+                data = scrum.data
             }
         }
         .sheet(isPresented: $isPresentingEditView) {
             NavigationView {
-                DetailEditView()
-                    .navigationTitle(scrum.title)
+                DetailEditView(data: $data)
+                    .navigationTitle(data.title)
                     .toolbar {
                         ToolbarItem(placement: .cancellationAction) {
                             Button("Cancel") {
