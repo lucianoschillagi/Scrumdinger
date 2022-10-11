@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-// MARK: - something
 struct ScrumsView: View {
     let scrums: [DailyScrum] // plural
     var body: some View {
@@ -23,8 +22,11 @@ struct ScrumsView: View {
         .toolbar {
             Button(action: {}) {
                 Image(systemName: "plus")
+//                    .resizable()
+//                    .scaledToFill()
+//                    .frame(width: 44, height: 44)
             }
-            .accessibilityLabel("New Scrum")
+            .accessibilityLabel("New scrum")
         }
     }
 }

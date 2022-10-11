@@ -10,7 +10,6 @@ import SwiftUI
 struct DetailEditView: View {
     @State private var data = DailyScrum.Data()
     @State private var newAttendeeName = ""
-    
     var body: some View {
         Form {
             Section(header: Text("Meeting Info")) {

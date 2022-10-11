@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// The info about a daily scrum
 struct DailyScrum: Identifiable {
     let id: UUID // stable indentity
     var title: String
@@ -62,6 +63,10 @@ extension DailyScrum {
         DailyScrum(title: "Web Dev",
                  attendees: ["Chella", "Chris", "Christina", "Eden", "Karla", "Lindsey", "Aga", "Chad", "Jenn", "Sarah"],
                  lengthInMinutes: 5,
-                 theme: .poppy)
+                 theme: .poppy),
+        DailyScrum(title: "Music",
+                 attendees: ["Chella", "Chris", "Christina", "Eden", "Karla", "Lindsey", "Aga", "Chad", "Jenn", "Sarah"],
+                 lengthInMinutes: 5,
+                   theme: .navy)
     ]
 }

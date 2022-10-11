@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// The theme colors of the app
 enum Theme: String, CaseIterable, Identifiable {
     case bubblegum
     case buttercup
