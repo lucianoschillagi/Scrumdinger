@@ -20,6 +20,7 @@
 		A6B65C6828D8C5C90079A1F5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B65C6728D8C5C90079A1F5 /* Theme.swift */; };
 		A6B65C6A28D8C7220079A1F5 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B65C6928D8C7220079A1F5 /* DailyScrum.swift */; };
 		A6B65C6C28D8E1240079A1F5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B65C6B28D8E1240079A1F5 /* CardView.swift */; };
+		A6BC1A3828F86C680073E92B /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BC1A3728F86C680073E92B /* MeetingHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		A6B65C6728D8C5C90079A1F5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		A6B65C6928D8C7220079A1F5 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 		A6B65C6B28D8E1240079A1F5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A6BC1A3728F86C680073E92B /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		A671C2A628DBCF2F008EB1AF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A6BC1A3728F86C680073E92B /* MeetingHeaderView.swift */,
 				A6A5095D28DCA3B9000F32FB /* ThemeView.swift */,
 				A6A5095F28DCA60F000F32FB /* ThemePicker.swift */,
 				A6B65C6B28D8E1240079A1F5 /* CardView.swift */,
@@ -191,6 +194,7 @@
 				A6A5096028DCA60F000F32FB /* ThemePicker.swift in Sources */,
 				A6B65C6A28D8C7220079A1F5 /* DailyScrum.swift in Sources */,
 				A671C2A228DBA4A1008EB1AF /* DetailView.swift in Sources */,
+				A6BC1A3828F86C680073E92B /* MeetingHeaderView.swift in Sources */,
 				A671C2A428DBC480008EB1AF /* DetailEditView.swift in Sources */,
 				A69FB96928DA1ACB00929210 /* TrailingIconLabelStyle.swift in Sources */,
 				A6B65C6828D8C5C90079A1F5 /* Theme.swift in Sources */,
