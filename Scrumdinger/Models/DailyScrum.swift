@@ -54,6 +54,14 @@ extension DailyScrum {
     var data: Data {
         Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), theme: theme)
     }
+    
+    init(data: Data) {
+        id = UUID()
+        title = data.title
+        attendees = data.attendees
+        lengthInMinutes = Int(data.lengthInMinutes)
+        theme = data.theme
+    }
 }
 
 // sample data to prototype
