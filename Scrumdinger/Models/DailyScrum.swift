@@ -8,7 +8,7 @@
 import Foundation
 
 /// The info about a daily scrum
-struct DailyScrum: Identifiable {
+struct DailyScrum: Identifiable, Codable {
     let id: UUID // stable indentity
     var title: String
     var attendees: [Attendee]
@@ -35,7 +35,7 @@ struct DailyScrum: Identifiable {
 extension DailyScrum {
     
     /// Info about the attendees
-    struct Attendee: Identifiable { // nested type
+    struct Attendee: Identifiable, Codable { // nested type
         let id: UUID
         var name: String
         init(id: UUID = UUID(), name: String) {
